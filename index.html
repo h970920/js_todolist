@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>자바스크립트 투두리스트</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./todo.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="todo-container">
+      <h1>Todo</h1>
+      <div id="inputField">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="할 일 추가하기"
+          onkeydown="keyCodeCheck()"
+        />
+        <button type="button" id="addBtn">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <ul id="todoList"></ul>
+    </div>
+  </body>
 </html>
